@@ -14,7 +14,7 @@ const Weather = ({data}) => {
                         width={100}
                         height={100}
                     />
-                    <p className='text-2xl'>{data.weather[0].main}</p>
+                    <p className='text-2xl'>{data.weather[0].description}</p>
                 </div>
                 <p className='text-9xl'>{data.main.temp.toFixed(0)}&#176;</p>
             </div>
@@ -31,7 +31,7 @@ const Weather = ({data}) => {
                         <p className='text-xl'>Humidade</p>
                     </div>
                     <div>
-                        <p className='font-bold text-2xl'>{data.wind.speed.toFixed(0)} MPH</p>
+                        <p className='font-bold text-2xl'>{data.wind.speed.toFixed(0)} km/h</p>
                         <p className='text-xl'>Vento</p>
                     </div>
                 </div>
