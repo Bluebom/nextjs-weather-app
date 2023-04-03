@@ -1,10 +1,18 @@
 import React from "react";
+import Image from 'next/image'
+import spinner from "../public/Spinner-1s-200px.gif";
 
-const Weather = ({data}) => {
-    console.log(data);
+const Spinner = ({data}) => {
     return (
-        <div>Weather</div>
+        <div>
+            <Image
+                alt="Loading..."
+                src={spinner}
+                fill
+                className="w-[200px] m-auto block relative"
+            />
+        </div>
     )
 }
 
-export default Weather
+export default Spinner
